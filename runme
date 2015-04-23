@@ -1,3 +1,4 @@
 [ ! -d ./node_modules ] && npm install
 
-npm start
+nodemon app.js
+#npm start

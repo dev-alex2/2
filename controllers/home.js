@@ -7,3 +7,10 @@ exports.index = function(req, res) {
     title: 'Home'
   });
 };
+
+exports.tbees = function(req, res) {
+    res.render('2bees', {
+          title: 'Worker Hive'
+              });
+};
+
