@@ -6,6 +6,17 @@ var userSchema = new mongoose.Schema({
   email: { type: String, unique: true, lowercase: true },
   password: String,
 
+  bee: { 
+    role: { type: String, default: '' },
+    tribes: Array,
+    assets: Array,
+  },
+  followers: Array,
+  followings: Array,
+  karma: Array,
+  trust: Array,
+
+
   facebook: String,
   twitter: String,
   google: String,
